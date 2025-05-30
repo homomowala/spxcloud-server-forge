@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import Preloader from "@/components/Preloader";
 import Index from "./pages/Index";
 import MinecraftHosting from "./pages/MinecraftHosting";
 import VPSHosting from "./pages/VPSHosting";
@@ -35,6 +36,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Preloader />
       <BrowserRouter>
         <AnimatedRoutes />
       </BrowserRouter>
