@@ -40,7 +40,7 @@ const Preloader = () => {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center"
+                className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center"
               >
                 <span className="text-2xl font-bold text-white">SPX</span>
               </motion.div>
@@ -56,7 +56,7 @@ const Preloader = () => {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="absolute inset-0 border-2 border-green-400 rounded-lg"
+                className="absolute inset-0 border-2 border-blue-400 rounded-lg"
               />
             </div>
           </motion.div>
@@ -87,7 +87,7 @@ const Preloader = () => {
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="mt-8 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full"
+            className="mt-8 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"
             style={{ maxWidth: "200px" }}
           />
         </motion.div>

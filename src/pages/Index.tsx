@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -36,19 +35,19 @@ const Index = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="relative py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-green-900/20">
+        <section className="relative py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900/20">
           <div className="container mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
               Premium Game & VPS Hosting. Built for Speed.
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Powerful AMD EPYC servers, blazing-fast performance, and unmatched support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4" asChild>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
                 <Link to="/minecraft">View Minecraft Plans</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
+              <Button size="lg" variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
                 <Link to="/vps">View VPS Plans</Link>
               </Button>
               <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
@@ -63,12 +62,12 @@ const Index = () => {
         {/* Features Overview */}
         <section className="py-20 px-4">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-green-400">Why Choose SPXCloud?</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Why Choose SPXCloud?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <div key={index} className="text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="bg-green-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600/30 transition-colors">
-                    <feature.icon className="w-8 h-8 text-green-400" />
+                  <div className="bg-blue-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600/30 transition-colors">
+                    <feature.icon className="w-8 h-8 text-blue-400" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                   <p className="text-gray-400">{feature.description}</p>
@@ -81,17 +80,17 @@ const Index = () => {
         {/* Popular Plans Preview */}
         <section className="py-20 px-4 bg-gray-800/50">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-green-400">Popular Plans</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Popular Plans</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {popularPlans.map((plan) => (
-                <Card key={plan.name} className={`bg-gray-800 border-gray-700 hover:border-green-400 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-green-400' : ''}`}>
+                <Card key={plan.name} className={`bg-gray-800 border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-blue-400' : ''}`}>
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-xl text-white">{plan.name}</CardTitle>
-                      {plan.popular && <Badge className="bg-green-600">Popular</Badge>}
+                      {plan.popular && <Badge className="bg-blue-600">Popular</Badge>}
                     </div>
                     <CardDescription className="text-gray-400">
-                      <div className="text-2xl font-bold text-green-400">{plan.priceINR}</div>
+                      <div className="text-2xl font-bold text-blue-400">{plan.priceINR}</div>
                       <div className="text-sm">{plan.priceUSD}/month</div>
                     </CardDescription>
                   </CardHeader>
@@ -100,35 +99,35 @@ const Index = () => {
                       <>
                         <div className="flex justify-between">
                           <span>RAM:</span>
-                          <span className="text-green-400">{plan.ram}</span>
+                          <span className="text-blue-400">{plan.ram}</span>
                         </div>
                         <div className="flex justify-between">
                           <span>CPU:</span>
-                          <span className="text-green-400">{plan.cpu}</span>
+                          <span className="text-blue-400">{plan.cpu}</span>
                         </div>
                       </>
                     ) : (
                       <>
                         <div className="flex justify-between">
                           <span>vCPU:</span>
-                          <span className="text-green-400">{plan.vcpu}</span>
+                          <span className="text-blue-400">{plan.vcpu}</span>
                         </div>
                         <div className="flex justify-between">
                           <span>RAM:</span>
-                          <span className="text-green-400">{plan.ram}</span>
+                          <span className="text-blue-400">{plan.ram}</span>
                         </div>
                       </>
                     )}
                     <div className="flex justify-between">
                       <span>Disk:</span>
-                      <span className="text-green-400">{plan.disk}</span>
+                      <span className="text-blue-400">{plan.disk}</span>
                     </div>
                   </CardContent>
                 </Card>
               ))}
             </div>
             <div className="text-center mt-8">
-              <Button className="bg-green-600 hover:bg-green-700" asChild>
+              <Button className="bg-blue-600 hover:bg-blue-700" asChild>
                 <Link to="/minecraft">View All Plans</Link>
               </Button>
             </div>
@@ -138,7 +137,7 @@ const Index = () => {
         {/* Why Choose Us */}
         <section className="py-20 px-4">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-green-400">Why Choose SPXCloud?</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Why Choose SPXCloud?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
@@ -163,14 +162,14 @@ const Index = () => {
         {/* Testimonials */}
         <section className="py-20 px-4 bg-gray-800/50">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-green-400">Loved by Gamers, Trusted by Communities</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Loved by Gamers, Trusted by Communities</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="bg-gray-800 border-gray-700">
                   <CardContent className="p-6">
                     <p className="text-gray-300 mb-4">"{testimonial.feedback}"</p>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold">
                         {testimonial.avatar}
                       </div>
                       <span className="font-semibold">{testimonial.name}</span>
@@ -185,12 +184,12 @@ const Index = () => {
         {/* Call to Action Footer */}
         <section className="py-20 px-4">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 text-green-400">Ready to launch your server?</h2>
+            <h2 className="text-4xl font-bold mb-6 text-blue-400">Ready to launch your server?</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4" asChild>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
                 <Link to="/contact">Order Now via Ticket</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
+              <Button size="lg" variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
                 <a href="https://discord.gg/bSKas2SFAc" target="_blank" rel="noopener noreferrer">
                   Join Discord
                 </a>

@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,9 +25,9 @@ const MinecraftHosting = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="relative py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-green-900/20">
+        <section className="relative py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900/20">
           <div className="container mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
               Minecraft Server Hosting
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
@@ -38,64 +39,64 @@ const MinecraftHosting = () => {
         {/* Plans Section */}
         <section className="py-20 px-4 bg-gray-800/50">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-green-400">Choose Your Plan</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Choose Your Plan</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {plans.map((plan) => (
-                <Card key={plan.name} className={`bg-gray-800 border-gray-700 hover:border-green-400 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-green-400' : ''}`}>
+                <Card key={plan.name} className={`bg-gray-800 border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-blue-400' : ''}`}>
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-xl text-white">{plan.name}</CardTitle>
-                      {plan.popular && <Badge className="bg-green-600">Popular</Badge>}
+                      {plan.popular && <Badge className="bg-blue-600">Popular</Badge>}
                     </div>
                     <CardDescription className="text-gray-400">
-                      <div className="text-2xl font-bold text-green-400">{plan.priceINR}</div>
+                      <div className="text-2xl font-bold text-blue-400">{plan.priceINR}</div>
                       <div className="text-sm">{plan.priceUSD}/month</div>
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <div className="flex justify-between">
                       <span>RAM:</span>
-                      <span className="text-green-400">{plan.ram}</span>
+                      <span className="text-blue-400">{plan.ram}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>CPU:</span>
-                      <span className="text-green-400">{plan.cpu}</span>
+                      <span className="text-blue-400">{plan.cpu}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Disk:</span>
-                      <span className="text-green-400">{plan.disk}</span>
+                      <span className="text-blue-400">{plan.disk}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Backups:</span>
-                      <span className="text-green-400">{plan.backups}</span>
+                      <span className="text-blue-400">{plan.backups}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Ports:</span>
-                      <span className="text-green-400">{plan.ports}</span>
+                      <span className="text-blue-400">{plan.ports}</span>
                     </div>
                     <div className="pt-4 space-y-2 text-sm text-gray-400">
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         France 🇫🇷 Location
                       </div>
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         AMD EPYC 7-Series CPU
                       </div>
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         DDoS Protection
                       </div>
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         Premium GamePanel
                       </div>
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         Instant Setup
                       </div>
                       <div className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-green-400" />
+                        <Check className="w-4 h-4 text-blue-400" />
                         Full Upgrade Option
                       </div>
                     </div>
@@ -109,15 +110,15 @@ const MinecraftHosting = () => {
         {/* Upgrade Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 text-green-400">Need More Power? No Problem.</h2>
+            <h2 className="text-4xl font-bold mb-6 text-blue-400">Need More Power? No Problem.</h2>
             <p className="text-xl text-gray-300 mb-8">You can upgrade any plan at any time.</p>
             <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 max-w-md mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-green-400">Upgrade Rate</h3>
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Upgrade Rate</h3>
               <div className="space-y-2 text-lg">
                 <div>+1GB RAM</div>
                 <div>+20% CPU</div>
                 <div>+2GB Disk</div>
-                <div className="text-2xl font-bold text-green-400 pt-4">₹50 / $0.60</div>
+                <div className="text-2xl font-bold text-blue-400 pt-4">₹50 / $0.60</div>
               </div>
             </div>
           </div>
