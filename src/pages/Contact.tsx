@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, Users, Mail } from "lucide-react";
@@ -48,7 +49,11 @@ const Contact = () => {
                   <MessageSquare className="w-12 h-12 text-green-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Discord</h3>
                   <p className="text-gray-400 mb-4">Join our community and get instant support</p>
-                  <Button className="bg-green-600 hover:bg-green-700">Join Discord</Button>
+                  <Button className="bg-green-600 hover:bg-green-700" asChild>
+                    <a href="https://discord.gg/bSKas2SFAc" target="_blank" rel="noopener noreferrer">
+                      Join Discord
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 

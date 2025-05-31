@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -50,8 +51,10 @@ const Index = () => {
               <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
                 <Link to="/vps">View VPS Plans</Link>
               </Button>
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-                Join Discord
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
+                <a href="https://discord.gg/bSKas2SFAc" target="_blank" rel="noopener noreferrer">
+                  Join Discord
+                </a>
               </Button>
             </div>
           </div>
@@ -187,8 +190,10 @@ const Index = () => {
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4" asChild>
                 <Link to="/contact">Order Now via Ticket</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 text-lg px-8 py-4">
-                Join Discord
+              <Button size="lg" variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-gray-900 text-lg px-8 py-4" asChild>
+                <a href="https://discord.gg/bSKas2SFAc" target="_blank" rel="noopener noreferrer">
+                  Join Discord
+                </a>
               </Button>
             </div>
           </div>

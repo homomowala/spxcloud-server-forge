@@ -29,7 +29,11 @@ const Navigation = () => {
             </Link>
           ))}
         </div>
-        <Button className="bg-green-600 hover:bg-green-700">Join Discord</Button>
+        <Button className="bg-green-600 hover:bg-green-700" asChild>
+          <a href="https://discord.gg/bSKas2SFAc" target="_blank" rel="noopener noreferrer">
+            Join Discord
+          </a>
+        </Button>
       </div>
     </nav>
   );
